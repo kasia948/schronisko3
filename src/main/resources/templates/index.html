@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Schronisko Tymeleafe</title>
+</head>
+<body>
+
+<h1>Pieski szukające domu</h1>
+
+<ul>
+    <li th:each="dog: ${dogs}">
+        <a th:href="${dog.name}" th:text="${dog.name}"></a>
+    </li>
+</ul>
+
+
+</body>
+</html>
