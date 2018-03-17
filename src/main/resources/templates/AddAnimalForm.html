@@ -20,7 +20,7 @@
 </head>
 <body>
 
-<form action="/dodaj" method="post" th:object="${newAnimal}">
+<form action="/addAnimal" method="post" th:object="${newAnimal}">
         <div class="form-group">
             <label for="formGroupExampleInput">Nazwa</label>
             <input th:field="*{name}" type="text" class="form-control" id="formGroupExampleInput" placeholder="Podaj imię zwierzaka">
